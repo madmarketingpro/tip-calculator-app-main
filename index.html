@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img class="logo" src="images/logo.svg" alt="Splitter Logo">
+<div class="container">
+  <p class="tiny">Bill</p>
+  <div class="amount-cntr">
+    <input class="amount" id="bill-amt"></input>
+    <img class="dollar-sign" src="images/icon-dollar.svg" alt="dollar sign">
+  </div>
+    <p class="tiny">Select Tip %</p>
+    <div class="tip-selection">
+  <p class="tip-percent" id="twelve">12%</p>
+  <p class="tip-percent" id="fifteen">15%</p>
+  <p class="tip-percent" id="eighteen">18%</p>
+  <p class="tip-percent" id="twenty">20%</p>
+  <p class="tip-percent" id="twentyfive">25%</p>
+  <input class="tip-percent custom-tip" id="custom" label="Custom" placeholder="Custom"></input>
+</div>
+
+
+  <p class="tiny">Number of People</p>
+  <div class="num-people">
+    <img class="people" src="images/icon-person.svg" alt="person-icon">
+  <input class="amount person-counter" id="total-people"></input>
+</div>
+<div class="answer-box">
+
+<div class="grid-container">
+
+  <div class="answer-total">
+  <p class="answer-tip">Tip Amount
+  <span class="per-person"><br/>/ person</span></p>
+</div>
+
+<div class="final-answer" id="tip-answer">sadf</div>
+
+<div class="answer-name">
+  <p class="answer-tip">Total
+    <span class="per-person"><br/>/ person</span></p>
+  </div>
+
+  <div class="final-answer" id="total-per-person">as</div>
+</div>
+
+  <button class="reset" id="reset" type="submit">Reset</button>
+</div>
+</div>
+
+</body>
+</html>
