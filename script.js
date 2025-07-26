@@ -105,12 +105,15 @@ function handleTipClick(tipPercentage) {
     }
 
 
-    const tipAmount = billAmount * tipPercentage;
+    const tipAmount = Math.round(((billAmount * tipPercentage)) * 100)/100;
+    const tipPerPerson = Math.round((tipAmount/peopleCount) * 100) /100;
+    console.log(tipPerPerson)
     const withTip = billAmount + tipAmount;
     const perPerson = withTip / Number(numPeople.value)
+    console.log(withTip)
     const rounded = Math.round(perPerson * 100) / 100 
-    document.getElementById('tip-answer').innerText = (`${tipAmount}`);
-    document.getElementById('total-per-person').innerText = (`${rounded}`)
+    document.getElementById('tip-answer').innerText = (`$${tipPerPerson}`);
+    document.getElementById('total-per-person').innerText = (`$${rounded}`)
 
 
 }
